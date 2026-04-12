@@ -1,0 +1,697 @@
+[
+  {
+    "paper_id": "p_39b07ceec72b",
+    "author_id": "a_1701130",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_39b07ceec72b",
+    "author_id": "a_1772133",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_23ffaa0fe06e",
+    "author_id": "a_2574060",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_23ffaa0fe06e",
+    "author_id": "a_2657155",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_23ffaa0fe06e",
+    "author_id": "a_2054165706",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_23ffaa0fe06e",
+    "author_id": "a_1789737",
+    "author_order": 4
+  },
+  {
+    "paper_id": "p_23ffaa0fe06e",
+    "author_id": "a_3282833",
+    "author_order": 5
+  },
+  {
+    "paper_id": "p_bd3d145d79a4",
+    "author_id": "a_2115693248",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_bd3d145d79a4",
+    "author_id": "a_2213690868",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_bd3d145d79a4",
+    "author_id": "a_2224462204",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_bd3d145d79a4",
+    "author_id": "a_46396336",
+    "author_order": 4
+  },
+  {
+    "paper_id": "p_bd3d145d79a4",
+    "author_id": "a_2118439046",
+    "author_order": 5
+  },
+  {
+    "paper_id": "p_bd3d145d79a4",
+    "author_id": "a_2263219",
+    "author_order": 6
+  },
+  {
+    "paper_id": "p_acbd6dd44d02",
+    "author_id": "a_2047463680",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_acbd6dd44d02",
+    "author_id": "a_2624177",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_acbd6dd44d02",
+    "author_id": "a_1752172",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_71b676fdf3ee",
+    "author_id": "a_2068343122",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_71b676fdf3ee",
+    "author_id": "a_1410066063",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_937229089e23",
+    "author_id": "a_2052900336",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_937229089e23",
+    "author_id": "a_34928812",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_937229089e23",
+    "author_id": "a_2633037",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_d88af0f7552d",
+    "author_id": "a_1717133",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_a3967f1a6f2b",
+    "author_id": "a_1772133",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_a3967f1a6f2b",
+    "author_id": "a_1701130",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_838cc3cc4cfc",
+    "author_id": "a_153686780",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_38d7619976df",
+    "author_id": "a_37682821",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_38d7619976df",
+    "author_id": "a_1772363",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_db9b6d8cada3",
+    "author_id": "a_2242958792",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_db9b6d8cada3",
+    "author_id": "a_2243238565",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_db9b6d8cada3",
+    "author_id": "a_2633037",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_f37463d0e62a",
+    "author_id": "a_1737836",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_f37463d0e62a",
+    "author_id": "a_144330671",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_f37463d0e62a",
+    "author_id": "a_145594823",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_106f2d390346",
+    "author_id": "a_20862008",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_106f2d390346",
+    "author_id": "a_146521344",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_106f2d390346",
+    "author_id": "a_146961287",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_106f2d390346",
+    "author_id": "a_2287483",
+    "author_order": 4
+  },
+  {
+    "paper_id": "p_ad39278ea271",
+    "author_id": "a_122192397",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_ad39278ea271",
+    "author_id": "a_11223062",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_1c2f916c375c",
+    "author_id": "a_145267291",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_1c2f916c375c",
+    "author_id": "a_66807434",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_1c2f916c375c",
+    "author_id": "a_35780376",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_1c2f916c375c",
+    "author_id": "a_33656278",
+    "author_order": 4
+  },
+  {
+    "paper_id": "p_1c2f916c375c",
+    "author_id": "a_37083060",
+    "author_order": 5
+  },
+  {
+    "paper_id": "p_1c2f916c375c",
+    "author_id": "a_1726383",
+    "author_order": 6
+  },
+  {
+    "paper_id": "p_c9ac0e19e566",
+    "author_id": "a_1772133",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_bacab55a58d7",
+    "author_id": "a_48448318",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_bacab55a58d7",
+    "author_id": "a_2052996328",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_bacab55a58d7",
+    "author_id": "a_39660914",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_cda76c0f3590",
+    "author_id": "a_2248334590",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_2ec40766f4d7",
+    "author_id": "a_2116287579",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_2ec40766f4d7",
+    "author_id": "a_1643846582",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_3b6a107d46a1",
+    "author_id": "a_47641694",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_ceb2ebef0b41",
+    "author_id": "a_2976930",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_ceb2ebef0b41",
+    "author_id": "a_36436218",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_ceb2ebef0b41",
+    "author_id": "a_1761103",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_6d01b10a7947",
+    "author_id": "a_2238205450",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_327109fdbc62",
+    "author_id": "a_70675870",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_327109fdbc62",
+    "author_id": "a_144350339",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_327109fdbc62",
+    "author_id": "a_3424424",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_c9cb2e7a3efb",
+    "author_id": "a_27802227",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_c9cb2e7a3efb",
+    "author_id": "a_2309941",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_767c8942c45c",
+    "author_id": "a_38642661",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_767c8942c45c",
+    "author_id": "a_3409999",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_767c8942c45c",
+    "author_id": "a_1737836",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_13699950c9a6",
+    "author_id": "a_27362922",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_13699950c9a6",
+    "author_id": "a_1739411",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_13699950c9a6",
+    "author_id": "a_1696756",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_c46c6f403dfc",
+    "author_id": "a_37682821",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_c46c6f403dfc",
+    "author_id": "a_1772363",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_79ba9e9ec975",
+    "author_id": "a_1717411",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_79ba9e9ec975",
+    "author_id": "a_144888943",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_79ba9e9ec975",
+    "author_id": "a_3334450",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_64a2261b178f",
+    "author_id": "a_2194602",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_64a2261b178f",
+    "author_id": "a_7221783",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_64a2261b178f",
+    "author_id": "a_3436871",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_64a2261b178f",
+    "author_id": "a_2251839572",
+    "author_order": 4
+  },
+  {
+    "paper_id": "p_64a2261b178f",
+    "author_id": "a_1971623",
+    "author_order": 5
+  },
+  {
+    "paper_id": "p_64a2261b178f",
+    "author_id": "a_145417478",
+    "author_order": 6
+  },
+  {
+    "paper_id": "p_ba4fb54bbe4a",
+    "author_id": "a_1771330",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_ba4fb54bbe4a",
+    "author_id": "a_3308405",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_def88614aaf4",
+    "author_id": "a_50039697",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_def88614aaf4",
+    "author_id": "a_66992523",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_def88614aaf4",
+    "author_id": "a_144552749",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_def88614aaf4",
+    "author_id": "a_72183280",
+    "author_order": 4
+  },
+  {
+    "paper_id": "p_def88614aaf4",
+    "author_id": "a_48950538",
+    "author_order": 5
+  },
+  {
+    "paper_id": "p_a3a0fb023282",
+    "author_id": "a_2424385691",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_913d86a84afa",
+    "author_id": "a_3161727",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_913d86a84afa",
+    "author_id": "a_1401168034",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_913d86a84afa",
+    "author_id": "a_1659266659",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_67571d29190f",
+    "author_id": "a_3121264",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_67571d29190f",
+    "author_id": "a_2815290",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_67571d29190f",
+    "author_id": "a_2841331",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_d58bec9a0595",
+    "author_id": "a_1706858",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_d58bec9a0595",
+    "author_id": "a_2110759834",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_d58bec9a0595",
+    "author_id": "a_1685479",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_8275f9dbe254",
+    "author_id": "a_2248814327",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_8275f9dbe254",
+    "author_id": "a_2075342218",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_acb10b1434e8",
+    "author_id": "a_2153298",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_acb10b1434e8",
+    "author_id": "a_2216992425",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_acb10b1434e8",
+    "author_id": "a_143848280",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_718267df7e8d",
+    "author_id": "a_27362922",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_718267df7e8d",
+    "author_id": "a_1739411",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_718267df7e8d",
+    "author_id": "a_1696756",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_718267df7e8d",
+    "author_id": "a_7910112",
+    "author_order": 4
+  },
+  {
+    "paper_id": "p_3a152bb49ca3",
+    "author_id": "a_11597598",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_3a152bb49ca3",
+    "author_id": "a_1397872048",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_3a152bb49ca3",
+    "author_id": "a_1407292159",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_829fe6dc7f53",
+    "author_id": "a_27362922",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_829fe6dc7f53",
+    "author_id": "a_1739411",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_829fe6dc7f53",
+    "author_id": "a_1696756",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_7d8d6d30ce3b",
+    "author_id": "a_2519482",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_7d8d6d30ce3b",
+    "author_id": "a_145410044",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_7d8d6d30ce3b",
+    "author_id": "a_2143818954",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_35a8c483ed06",
+    "author_id": "a_46804802",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_35a8c483ed06",
+    "author_id": "a_3152086",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_35a8c483ed06",
+    "author_id": "a_1410066063",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_b4324589c4f1",
+    "author_id": "a_1772133",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_b4324589c4f1",
+    "author_id": "a_1701130",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_f6f5bb08f35a",
+    "author_id": "a_34405222",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_f6f5bb08f35a",
+    "author_id": "a_3084214",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_f6f5bb08f35a",
+    "author_id": "a_143792396",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_89ad40ff11db",
+    "author_id": "a_145243732",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_89ad40ff11db",
+    "author_id": "a_37849025",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_648fde9363a1",
+    "author_id": "a_1772133",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_648fde9363a1",
+    "author_id": "a_1701130",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_742fefcc49ec",
+    "author_id": "a_40566907",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_742fefcc49ec",
+    "author_id": "a_30776886",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_742fefcc49ec",
+    "author_id": "a_2819066",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_742fefcc49ec",
+    "author_id": "a_2769334",
+    "author_order": 4
+  },
+  {
+    "paper_id": "p_0c73f108a19c",
+    "author_id": "a_50856718",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_0c73f108a19c",
+    "author_id": "a_2304738",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_0c73f108a19c",
+    "author_id": "a_2188977413",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_8973ad5fc126",
+    "author_id": "a_2263465506",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_8973ad5fc126",
+    "author_id": "a_2151789838",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_8973ad5fc126",
+    "author_id": "a_144661829",
+    "author_order": 3
+  },
+  {
+    "paper_id": "p_bcaba6eab3ec",
+    "author_id": "a_2518996",
+    "author_order": 1
+  },
+  {
+    "paper_id": "p_bcaba6eab3ec",
+    "author_id": "a_50856718",
+    "author_order": 2
+  },
+  {
+    "paper_id": "p_bcaba6eab3ec",
+    "author_id": "a_3306197",
+    "author_order": 3
+  }
+]

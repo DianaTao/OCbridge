@@ -1,0 +1,722 @@
+[
+  {
+    "author_id": "a_1701130",
+    "author_name": "D. Patterson",
+    "author_profile_url": "https://www.semanticscholar.org/author/D.-Patterson/1701130",
+    "citation_count": 93
+  },
+  {
+    "author_id": "a_1772133",
+    "author_name": "J. Hennessy",
+    "author_profile_url": "https://www.semanticscholar.org/author/J.-Hennessy/1772133",
+    "citation_count": 64
+  },
+  {
+    "author_id": "a_2574060",
+    "author_name": "Christian Szegedy",
+    "author_profile_url": "https://www.semanticscholar.org/author/Christian-Szegedy/2574060",
+    "citation_count": 29
+  },
+  {
+    "author_id": "a_2657155",
+    "author_name": "Vincent Vanhoucke",
+    "author_profile_url": "https://www.semanticscholar.org/author/Vincent-Vanhoucke/2657155",
+    "citation_count": 34
+  },
+  {
+    "author_id": "a_2054165706",
+    "author_name": "Sergey Ioffe",
+    "author_profile_url": "https://www.semanticscholar.org/author/Sergey-Ioffe/2054165706",
+    "citation_count": 20
+  },
+  {
+    "author_id": "a_1789737",
+    "author_name": "Jonathon Shlens",
+    "author_profile_url": "https://www.semanticscholar.org/author/Jonathon-Shlens/1789737",
+    "citation_count": 59
+  },
+  {
+    "author_id": "a_3282833",
+    "author_name": "Z. Wojna",
+    "author_profile_url": "https://www.semanticscholar.org/author/Z.-Wojna/3282833",
+    "citation_count": 9
+  },
+  {
+    "author_id": "a_2115693248",
+    "author_name": "Changwu Zhang",
+    "author_profile_url": "https://www.semanticscholar.org/author/Changwu-Zhang/2115693248",
+    "citation_count": 5
+  },
+  {
+    "author_id": "a_2213690868",
+    "author_name": "Hao Sun",
+    "author_profile_url": "https://www.semanticscholar.org/author/Hao-Sun/2213690868",
+    "citation_count": 3
+  },
+  {
+    "author_id": "a_2224462204",
+    "author_name": "Shuman Li",
+    "author_profile_url": "https://www.semanticscholar.org/author/Shuman-Li/2224462204",
+    "citation_count": 2
+  },
+  {
+    "author_id": "a_46396336",
+    "author_name": "Yao Wang",
+    "author_profile_url": "https://www.semanticscholar.org/author/Yao-Wang/46396336",
+    "citation_count": 30
+  },
+  {
+    "author_id": "a_2118439046",
+    "author_name": "Haiyan Chen",
+    "author_profile_url": "https://www.semanticscholar.org/author/Haiyan-Chen/2118439046",
+    "citation_count": 4
+  },
+  {
+    "author_id": "a_2263219",
+    "author_name": "Hengzhu Liu",
+    "author_profile_url": "https://www.semanticscholar.org/author/Hengzhu-Liu/2263219",
+    "citation_count": 16
+  },
+  {
+    "author_id": "a_2047463680",
+    "author_name": "August Ning",
+    "author_profile_url": "https://www.semanticscholar.org/author/August-Ning/2047463680",
+    "citation_count": 6
+  },
+  {
+    "author_id": "a_2624177",
+    "author_name": "Georgios Tziantzioulis",
+    "author_profile_url": "https://www.semanticscholar.org/author/Georgios-Tziantzioulis/2624177",
+    "citation_count": 4
+  },
+  {
+    "author_id": "a_1752172",
+    "author_name": "D. Wentzlaff",
+    "author_profile_url": "https://www.semanticscholar.org/author/D.-Wentzlaff/1752172",
+    "citation_count": 28
+  },
+  {
+    "author_id": "a_2068343122",
+    "author_name": "Nan Wu",
+    "author_profile_url": "https://www.semanticscholar.org/author/Nan-Wu/2068343122",
+    "citation_count": 10
+  },
+  {
+    "author_id": "a_1410066063",
+    "author_name": "Yuan Xie",
+    "author_profile_url": "https://www.semanticscholar.org/author/Yuan-Xie/1410066063",
+    "citation_count": 59
+  },
+  {
+    "author_id": "a_2052900336",
+    "author_name": "Juan Pino",
+    "author_profile_url": "https://www.semanticscholar.org/author/Juan-Pino/2052900336",
+    "citation_count": 4
+  },
+  {
+    "author_id": "a_34928812",
+    "author_name": "J. Dreiling",
+    "author_profile_url": "https://www.semanticscholar.org/author/J.-Dreiling/34928812",
+    "citation_count": 19
+  },
+  {
+    "author_id": "a_2633037",
+    "author_name": "B. Neyenhuis",
+    "author_profile_url": "https://www.semanticscholar.org/author/B.-Neyenhuis/2633037",
+    "citation_count": 29
+  },
+  {
+    "author_id": "a_1717133",
+    "author_name": "L. Eeckhout",
+    "author_profile_url": "https://www.semanticscholar.org/author/L.-Eeckhout/1717133",
+    "citation_count": 51
+  },
+  {
+    "author_id": "a_153686780",
+    "author_name": "Morten B. Petersen",
+    "author_profile_url": "https://www.semanticscholar.org/author/Morten-B.-Petersen/153686780",
+    "citation_count": 4
+  },
+  {
+    "author_id": "a_37682821",
+    "author_name": "Ayaz Akram",
+    "author_profile_url": "https://www.semanticscholar.org/author/Ayaz-Akram/37682821",
+    "citation_count": 12
+  },
+  {
+    "author_id": "a_1772363",
+    "author_name": "L. Sawalha",
+    "author_profile_url": "https://www.semanticscholar.org/author/L.-Sawalha/1772363",
+    "citation_count": 8
+  },
+  {
+    "author_id": "a_2242958792",
+    "author_name": "S. Moses",
+    "author_profile_url": "https://www.semanticscholar.org/author/S.-Moses/2242958792",
+    "citation_count": 15
+  },
+  {
+    "author_id": "a_2243238565",
+    "author_name": "J. Pino",
+    "author_profile_url": "https://www.semanticscholar.org/author/J.-Pino/2243238565",
+    "citation_count": 7
+  },
+  {
+    "author_id": "a_1737836",
+    "author_name": "K. Bertels",
+    "author_profile_url": "https://www.semanticscholar.org/author/K.-Bertels/1737836",
+    "citation_count": 38
+  },
+  {
+    "author_id": "a_144330671",
+    "author_name": "A. Sarkar",
+    "author_profile_url": "https://www.semanticscholar.org/author/A.-Sarkar/144330671",
+    "citation_count": 11
+  },
+  {
+    "author_id": "a_145594823",
+    "author_name": "I. Ashraf",
+    "author_profile_url": "https://www.semanticscholar.org/author/I.-Ashraf/145594823",
+    "citation_count": 13
+  },
+  {
+    "author_id": "a_20862008",
+    "author_name": "Gyu-hyeon Lee",
+    "author_profile_url": "https://www.semanticscholar.org/author/Gyu-hyeon-Lee/20862008",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_146521344",
+    "author_name": "Dongmoon Min",
+    "author_profile_url": "https://www.semanticscholar.org/author/Dongmoon-Min/146521344",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_146961287",
+    "author_name": "Ilkwon Byun",
+    "author_profile_url": "https://www.semanticscholar.org/author/Ilkwon-Byun/146961287",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_2287483",
+    "author_name": "Jangwoo Kim",
+    "author_profile_url": "https://www.semanticscholar.org/author/Jangwoo-Kim/2287483",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_122192397",
+    "author_name": "Drew Penney",
+    "author_profile_url": "https://www.semanticscholar.org/author/Drew-Penney/122192397",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_11223062",
+    "author_name": "Lizhong Chen",
+    "author_profile_url": "https://www.semanticscholar.org/author/Lizhong-Chen/11223062",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_145267291",
+    "author_name": "Rashmi Agrawal",
+    "author_profile_url": "https://www.semanticscholar.org/author/Rashmi-Agrawal/145267291",
+    "citation_count": 11
+  },
+  {
+    "author_id": "a_66807434",
+    "author_name": "Sahan Bandara",
+    "author_profile_url": "https://www.semanticscholar.org/author/Sahan-Bandara/66807434",
+    "citation_count": 6
+  },
+  {
+    "author_id": "a_35780376",
+    "author_name": "Alan Ehret",
+    "author_profile_url": "https://www.semanticscholar.org/author/Alan-Ehret/35780376",
+    "citation_count": 7
+  },
+  {
+    "author_id": "a_33656278",
+    "author_name": "Mihailo Isakov",
+    "author_profile_url": "https://www.semanticscholar.org/author/Mihailo-Isakov/33656278",
+    "citation_count": 9
+  },
+  {
+    "author_id": "a_37083060",
+    "author_name": "Miguel Mark",
+    "author_profile_url": "https://www.semanticscholar.org/author/Miguel-Mark/37083060",
+    "citation_count": 5
+  },
+  {
+    "author_id": "a_1726383",
+    "author_name": "Michel A. Kinsy",
+    "author_profile_url": "https://www.semanticscholar.org/author/Michel-A.-Kinsy/1726383",
+    "citation_count": 20
+  },
+  {
+    "author_id": "a_48448318",
+    "author_name": "J. Dean",
+    "author_profile_url": "https://www.semanticscholar.org/author/J.-Dean/48448318",
+    "citation_count": 25
+  },
+  {
+    "author_id": "a_2052996328",
+    "author_name": "David A. Patterson",
+    "author_profile_url": "https://www.semanticscholar.org/author/David-A.-Patterson/2052996328",
+    "citation_count": 7
+  },
+  {
+    "author_id": "a_39660914",
+    "author_name": "C. Young",
+    "author_profile_url": "https://www.semanticscholar.org/author/C.-Young/39660914",
+    "citation_count": 35
+  },
+  {
+    "author_id": "a_2248334590",
+    "author_name": "Jean-Loup Baer",
+    "author_profile_url": "https://www.semanticscholar.org/author/Jean-Loup-Baer/2248334590",
+    "citation_count": 3
+  },
+  {
+    "author_id": "a_2116287579",
+    "author_name": "A. Singh",
+    "author_profile_url": "https://www.semanticscholar.org/author/A.-Singh/2116287579",
+    "citation_count": 30
+  },
+  {
+    "author_id": "a_1643846582",
+    "author_name": "G. Gandhi",
+    "author_profile_url": "https://www.semanticscholar.org/author/G.-Gandhi/1643846582",
+    "citation_count": 3
+  },
+  {
+    "author_id": "a_47641694",
+    "author_name": "K. Wagner",
+    "author_profile_url": "https://www.semanticscholar.org/author/K.-Wagner/47641694",
+    "citation_count": 19
+  },
+  {
+    "author_id": "a_2976930",
+    "author_name": "Tero Karras",
+    "author_profile_url": "https://www.semanticscholar.org/author/Tero-Karras/2976930",
+    "citation_count": 34
+  },
+  {
+    "author_id": "a_36436218",
+    "author_name": "S. Laine",
+    "author_profile_url": "https://www.semanticscholar.org/author/S.-Laine/36436218",
+    "citation_count": 41
+  },
+  {
+    "author_id": "a_1761103",
+    "author_name": "Timo Aila",
+    "author_profile_url": "https://www.semanticscholar.org/author/Timo-Aila/1761103",
+    "citation_count": 46
+  },
+  {
+    "author_id": "a_2238205450",
+    "author_name": "Shuangbao Wang",
+    "author_profile_url": "https://www.semanticscholar.org/author/Shuangbao-Wang/2238205450",
+    "citation_count": 2
+  },
+  {
+    "author_id": "a_70675870",
+    "author_name": "Dulari Bhatt",
+    "author_profile_url": "https://www.semanticscholar.org/author/Dulari-Bhatt/70675870",
+    "citation_count": 4
+  },
+  {
+    "author_id": "a_144350339",
+    "author_name": "Chirag I. Patel",
+    "author_profile_url": "https://www.semanticscholar.org/author/Chirag-I.-Patel/144350339",
+    "citation_count": 14
+  },
+  {
+    "author_id": "a_3424424",
+    "author_name": "H. Ghayvat",
+    "author_profile_url": "https://www.semanticscholar.org/author/H.-Ghayvat/3424424",
+    "citation_count": 24
+  },
+  {
+    "author_id": "a_27802227",
+    "author_name": "P. Faldu",
+    "author_profile_url": "https://www.semanticscholar.org/author/P.-Faldu/27802227",
+    "citation_count": 6
+  },
+  {
+    "author_id": "a_2309941",
+    "author_name": "B. Grot",
+    "author_profile_url": "https://www.semanticscholar.org/author/B.-Grot/2309941",
+    "citation_count": 33
+  },
+  {
+    "author_id": "a_38642661",
+    "author_name": "Xiang Fu",
+    "author_profile_url": "https://www.semanticscholar.org/author/Xiang-Fu/38642661",
+    "citation_count": 11
+  },
+  {
+    "author_id": "a_3409999",
+    "author_name": "L. Riesebos",
+    "author_profile_url": "https://www.semanticscholar.org/author/L.-Riesebos/3409999",
+    "citation_count": 7
+  },
+  {
+    "author_id": "a_27362922",
+    "author_name": "A. Tlili",
+    "author_profile_url": "https://www.semanticscholar.org/author/A.-Tlili/27362922",
+    "citation_count": 42
+  },
+  {
+    "author_id": "a_1739411",
+    "author_name": "Fathi Essalmi",
+    "author_profile_url": "https://www.semanticscholar.org/author/Fathi-Essalmi/1739411",
+    "citation_count": 21
+  },
+  {
+    "author_id": "a_1696756",
+    "author_name": "M. Jemni",
+    "author_profile_url": "https://www.semanticscholar.org/author/M.-Jemni/1696756",
+    "citation_count": 29
+  },
+  {
+    "author_id": "a_1717411",
+    "author_name": "L. Ceze",
+    "author_profile_url": "https://www.semanticscholar.org/author/L.-Ceze/1717411",
+    "citation_count": 57
+  },
+  {
+    "author_id": "a_144888943",
+    "author_name": "M. Hill",
+    "author_profile_url": "https://www.semanticscholar.org/author/M.-Hill/144888943",
+    "citation_count": 75
+  },
+  {
+    "author_id": "a_3334450",
+    "author_name": "T. Wenisch",
+    "author_profile_url": "https://www.semanticscholar.org/author/T.-Wenisch/3334450",
+    "citation_count": 54
+  },
+  {
+    "author_id": "a_2194602",
+    "author_name": "Vernon J. Lawhern",
+    "author_profile_url": "https://www.semanticscholar.org/author/Vernon-J.-Lawhern/2194602",
+    "citation_count": 23
+  },
+  {
+    "author_id": "a_7221783",
+    "author_name": "Amelia J. Solon",
+    "author_profile_url": "https://www.semanticscholar.org/author/Amelia-J.-Solon/7221783",
+    "citation_count": 7
+  },
+  {
+    "author_id": "a_3436871",
+    "author_name": "Nicholas R. Waytowich",
+    "author_profile_url": "https://www.semanticscholar.org/author/Nicholas-R.-Waytowich/3436871",
+    "citation_count": 20
+  },
+  {
+    "author_id": "a_2251839572",
+    "author_name": "S. Gordon",
+    "author_profile_url": "https://www.semanticscholar.org/author/S.-Gordon/2251839572",
+    "citation_count": 11
+  },
+  {
+    "author_id": "a_1971623",
+    "author_name": "C. Hung",
+    "author_profile_url": "https://www.semanticscholar.org/author/C.-Hung/1971623",
+    "citation_count": 11
+  },
+  {
+    "author_id": "a_145417478",
+    "author_name": "Brent Lance",
+    "author_profile_url": "https://www.semanticscholar.org/author/Brent-Lance/145417478",
+    "citation_count": 23
+  },
+  {
+    "author_id": "a_1771330",
+    "author_name": "S. Min",
+    "author_profile_url": "https://www.semanticscholar.org/author/S.-Min/1771330",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_3308405",
+    "author_name": "G. Loh",
+    "author_profile_url": "https://www.semanticscholar.org/author/G.-Loh/3308405",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_50039697",
+    "author_name": "E. Upton",
+    "author_profile_url": "https://www.semanticscholar.org/author/E.-Upton/50039697",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_66992523",
+    "author_name": "Jeff Duntemann",
+    "author_profile_url": "https://www.semanticscholar.org/author/Jeff-Duntemann/66992523",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_144552749",
+    "author_name": "R. Roberts",
+    "author_profile_url": "https://www.semanticscholar.org/author/R.-Roberts/144552749",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_72183280",
+    "author_name": "T. Mamtora",
+    "author_profile_url": "https://www.semanticscholar.org/author/T.-Mamtora/72183280",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_48950538",
+    "author_name": "Ben Everard",
+    "author_profile_url": "https://www.semanticscholar.org/author/Ben-Everard/48950538",
+    "citation_count": 4
+  },
+  {
+    "author_id": "a_2424385691",
+    "author_name": "Joseph D. Dumas II",
+    "author_profile_url": "https://www.semanticscholar.org/author/Joseph-D.-Dumas-II/2424385691",
+    "citation_count": 0
+  },
+  {
+    "author_id": "a_3161727",
+    "author_name": "Juan R. Terven",
+    "author_profile_url": "https://www.semanticscholar.org/author/Juan-R.-Terven/3161727",
+    "citation_count": 17
+  },
+  {
+    "author_id": "a_1401168034",
+    "author_name": "Diana-Margarita Córdova-Esparza",
+    "author_profile_url": "https://www.semanticscholar.org/author/Diana-Margarita-C%C3%B3rdova-Esparza/1401168034",
+    "citation_count": 14
+  },
+  {
+    "author_id": "a_1659266659",
+    "author_name": "J. Romero-González",
+    "author_profile_url": "https://www.semanticscholar.org/author/J.-Romero-Gonz%C3%A1lez/1659266659",
+    "citation_count": 10
+  },
+  {
+    "author_id": "a_3121264",
+    "author_name": "I. Tolstikhin",
+    "author_profile_url": "https://www.semanticscholar.org/author/I.-Tolstikhin/3121264",
+    "citation_count": 17
+  },
+  {
+    "author_id": "a_2815290",
+    "author_name": "N. Houlsby",
+    "author_profile_url": "https://www.semanticscholar.org/author/N.-Houlsby/2815290",
+    "citation_count": 52
+  },
+  {
+    "author_id": "a_2841331",
+    "author_name": "Alexey Dosovitskiy",
+    "author_profile_url": "https://www.semanticscholar.org/author/Alexey-Dosovitskiy/2841331",
+    "citation_count": 54
+  },
+  {
+    "author_id": "a_1706858",
+    "author_name": "D. Culler",
+    "author_profile_url": "https://www.semanticscholar.org/author/D.-Culler/1706858",
+    "citation_count": 116
+  },
+  {
+    "author_id": "a_2110759834",
+    "author_name": "Anoop Gupta",
+    "author_profile_url": "https://www.semanticscholar.org/author/Anoop-Gupta/2110759834",
+    "citation_count": 69
+  },
+  {
+    "author_id": "a_1685479",
+    "author_name": "J. Singh",
+    "author_profile_url": "https://www.semanticscholar.org/author/J.-Singh/1685479",
+    "citation_count": 39
+  },
+  {
+    "author_id": "a_2248814327",
+    "author_name": "S. Harris",
+    "author_profile_url": "https://www.semanticscholar.org/author/S.-Harris/2248814327",
+    "citation_count": 9
+  },
+  {
+    "author_id": "a_2075342218",
+    "author_name": "D. Harris",
+    "author_profile_url": "https://www.semanticscholar.org/author/D.-Harris/2075342218",
+    "citation_count": 7
+  },
+  {
+    "author_id": "a_2153298",
+    "author_name": "O. Arbelaitz",
+    "author_profile_url": "https://www.semanticscholar.org/author/O.-Arbelaitz/2153298",
+    "citation_count": 19
+  },
+  {
+    "author_id": "a_2216992425",
+    "author_name": "J. Martín",
+    "author_profile_url": "https://www.semanticscholar.org/author/J.-Mart%C3%ADn/2216992425",
+    "citation_count": 14
+  },
+  {
+    "author_id": "a_143848280",
+    "author_name": "J. Muguerza",
+    "author_profile_url": "https://www.semanticscholar.org/author/J.-Muguerza/143848280",
+    "citation_count": 20
+  },
+  {
+    "author_id": "a_7910112",
+    "author_name": "Kinshuk",
+    "author_profile_url": "https://www.semanticscholar.org/author/Kinshuk/7910112",
+    "citation_count": 51
+  },
+  {
+    "author_id": "a_11597598",
+    "author_name": "M. Chacón",
+    "author_profile_url": "https://www.semanticscholar.org/author/M.-Chac%C3%B3n/11597598",
+    "citation_count": 3
+  },
+  {
+    "author_id": "a_1397872048",
+    "author_name": "Ángel Quirós-Olozábal",
+    "author_profile_url": "https://www.semanticscholar.org/author/%C3%81ngel-Quir%C3%B3s-Oloz%C3%A1bal/1397872048",
+    "citation_count": 5
+  },
+  {
+    "author_id": "a_1407292159",
+    "author_name": "J. Guerrero-Rodríguez",
+    "author_profile_url": "https://www.semanticscholar.org/author/J.-Guerrero-Rodr%C3%ADguez/1407292159",
+    "citation_count": 5
+  },
+  {
+    "author_id": "a_2519482",
+    "author_name": "Jie-Zhi Cheng",
+    "author_profile_url": "https://www.semanticscholar.org/author/Jie-Zhi-Cheng/2519482",
+    "citation_count": 26
+  },
+  {
+    "author_id": "a_145410044",
+    "author_name": "Dong Ni",
+    "author_profile_url": "https://www.semanticscholar.org/author/Dong-Ni/145410044",
+    "citation_count": 43
+  },
+  {
+    "author_id": "a_2143818954",
+    "author_name": "Chung-Ming Chen",
+    "author_profile_url": "https://www.semanticscholar.org/author/Chung-Ming-Chen/2143818954",
+    "citation_count": 24
+  },
+  {
+    "author_id": "a_46804802",
+    "author_name": "Ping Chi",
+    "author_profile_url": "https://www.semanticscholar.org/author/Ping-Chi/46804802",
+    "citation_count": 11
+  },
+  {
+    "author_id": "a_3152086",
+    "author_name": "Shuangchen Li",
+    "author_profile_url": "https://www.semanticscholar.org/author/Shuangchen-Li/3152086",
+    "citation_count": 33
+  },
+  {
+    "author_id": "a_34405222",
+    "author_name": "Derek Lockhart",
+    "author_profile_url": "https://www.semanticscholar.org/author/Derek-Lockhart/34405222",
+    "citation_count": 8
+  },
+  {
+    "author_id": "a_3084214",
+    "author_name": "Gary Zibrat",
+    "author_profile_url": "https://www.semanticscholar.org/author/Gary-Zibrat/3084214",
+    "citation_count": 1
+  },
+  {
+    "author_id": "a_143792396",
+    "author_name": "C. Batten",
+    "author_profile_url": "https://www.semanticscholar.org/author/C.-Batten/143792396",
+    "citation_count": 24
+  },
+  {
+    "author_id": "a_145243732",
+    "author_name": "K. Hwang",
+    "author_profile_url": "https://www.semanticscholar.org/author/K.-Hwang/145243732",
+    "citation_count": 49
+  },
+  {
+    "author_id": "a_37849025",
+    "author_name": "F. A. Briggs",
+    "author_profile_url": "https://www.semanticscholar.org/author/F.-A.-Briggs/37849025",
+    "citation_count": 16
+  },
+  {
+    "author_id": "a_40566907",
+    "author_name": "M. Veldhorst",
+    "author_profile_url": "https://www.semanticscholar.org/author/M.-Veldhorst/40566907",
+    "citation_count": 46
+  },
+  {
+    "author_id": "a_30776886",
+    "author_name": "H. Eenink",
+    "author_profile_url": "https://www.semanticscholar.org/author/H.-Eenink/30776886",
+    "citation_count": 9
+  },
+  {
+    "author_id": "a_2819066",
+    "author_name": "C. Yang",
+    "author_profile_url": "https://www.semanticscholar.org/author/C.-Yang/2819066",
+    "citation_count": 25
+  },
+  {
+    "author_id": "a_2769334",
+    "author_name": "A. Dzurak",
+    "author_profile_url": "https://www.semanticscholar.org/author/A.-Dzurak/2769334",
+    "citation_count": 59
+  },
+  {
+    "author_id": "a_50856718",
+    "author_name": "C. Monroe",
+    "author_profile_url": "https://www.semanticscholar.org/author/C.-Monroe/50856718",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_2304738",
+    "author_name": "R. Raussendorf",
+    "author_profile_url": "https://www.semanticscholar.org/author/R.-Raussendorf/2304738",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_2188977413",
+    "author_name": "Jungsang Kim",
+    "author_profile_url": "https://www.semanticscholar.org/author/Jungsang-Kim/2188977413",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_2263465506",
+    "author_name": "Colin White",
+    "author_profile_url": "https://www.semanticscholar.org/author/Colin-White/2263465506",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_2151789838",
+    "author_name": "Mahmoud Safari",
+    "author_profile_url": "https://www.semanticscholar.org/author/Mahmoud-Safari/2151789838",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_144661829",
+    "author_name": "F. Hutter",
+    "author_profile_url": "https://www.semanticscholar.org/author/F.-Hutter/144661829",
+    "citation_count": null
+  },
+  {
+    "author_id": "a_2518996",
+    "author_name": "D. Kielpinski",
+    "author_profile_url": "https://www.semanticscholar.org/author/D.-Kielpinski/2518996",
+    "citation_count": 25
+  },
+  {
+    "author_id": "a_3306197",
+    "author_name": "D. Wineland",
+    "author_profile_url": "https://www.semanticscholar.org/author/D.-Wineland/3306197",
+    "citation_count": 103
+  }
+]
