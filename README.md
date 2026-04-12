@@ -1,10 +1,10 @@
-# Semantic Scholar Paper & Author Scraper
+# Semantic Scholar Scraper
 
-An end-to-end automated pipeline that searches Semantic Scholar for papers matching a query, collects structured paper and author data, visits author profile pages to extract citation counts, and outputs everything in CSV and JSON.
+Scrapes Semantic Scholar for papers matching a query, grabs author data, visits each author's profile to pull their citation count, and dumps everything into CSV + JSON files. One command, no manual steps.
 
 ## Setup
 
-Requires Python 3.10+.
+Python 3.10+ required.
 
 ```bash
 python -m venv .venv
@@ -19,114 +19,95 @@ playwright install chromium
 python main.py
 ```
 
-A single command runs the full pipeline. Outputs are written to `output/`:
+Output goes into `output/`:
 
-| File | Format | Description |
-| --- | --- | --- |
-| `papers.csv` / `papers.json` | Flat | 50 papers with title, URL, and authors |
-| `authors.csv` / `authors.json` | Flat | Unique authors with profile URL and citation count |
-| `paper_authors.csv` / `paper_authors.json` | Join table | Paper-to-author relationships with display order |
+- `papers.csv` / `papers.json` — 50 papers with title, URL, authors
+- `authors.csv` / `authors.json` — unique authors with profile URLs and citation counts
+- `paper_authors.csv` / `paper_authors.json` — which author belongs to which paper, in what order
 
-All configuration lives in `config.py` (query, result limit, delays, headless mode, etc.).
+Everything is configurable in `config.py` (query string, result limit, delays, headless mode, etc.).
 
-## Approach & Key Design Choices
+## Approach
 
-### Browser automation with Playwright
+### Why Playwright?
 
-Semantic Scholar renders search results dynamically with JavaScript, so a real browser is required. The scraper uses Playwright to launch headless Chromium with anti-detection measures:
+Semantic Scholar is a JavaScript-heavy SPA. The search results don't exist in the raw HTML — they're rendered client-side. So we need a real browser. Playwright launches headless Chromium with a few tweaks to avoid bot detection: a real-looking user-agent, a normal viewport size, and the `navigator.webdriver` flag removed.
 
-- A realistic user-agent string, viewport size, and locale
-- The `navigator.webdriver` property is removed via an init script
-- The `AutomationControlled` Blink feature is disabled
-- A cookie consent banner is dismissed on first page load
+The cookie consent banner that appears on first visit is also dismissed automatically.
 
-### URL-based pagination (not button clicks)
+### Pagination
 
-Rather than locating and clicking a "next page" button (which is fragile and breaks when Semantic Scholar updates their CSS classes), the scraper constructs each search page URL directly using the `&page=N` query parameter. This is far more robust and avoids the need for DOM-dependent pagination selectors.
+I initially tried clicking the "next page" button, but that turned out to be fragile — the CSS class names on Semantic Scholar change, and the click-then-wait-for-content-change approach was unreliable. Instead, the scraper just navigates directly to each page URL using the `&page=N` parameter. Much simpler, much more reliable.
 
-Each page is loaded with `wait_until="networkidle"` to ensure the SPA has fully rendered before extraction, and a 2-second delay is added between pages to avoid rate-limiting.
+There's a 2-second pause between pages to be polite and avoid rate limits.
 
-### JavaScript-based extraction
+### Extracting paper + author data
 
-Paper and author data are extracted from the rendered DOM using a single `page.evaluate()` call that runs a JavaScript function in the browser context. The script:
+Each search result page is scraped with a single `page.evaluate()` call that runs JavaScript in the browser. The script finds all links pointing to `/paper/` URLs, walks up the DOM to find the surrounding paper card, then pulls out author names and profile links from within that card.
 
-1. Finds all `<a>` elements linking to `/paper/` URLs
-2. Walks up the DOM to find the enclosing paper card
-3. Within each card, locates the author container and extracts linked author names and profile URLs
-4. Falls back to text-based author name splitting when no author links are present
+The selectors have several fallbacks (different class naming conventions Semantic Scholar has used), so it's reasonably resilient to minor markup changes. If no author links are found, it falls back to splitting the author text by commas.
 
-This approach is more resilient than CSS-selector-only extraction because it uses multiple fallback selectors for both paper cards and author containers.
+### Output format
 
-### Normalized relational output
+Since the paper-author relationship is many-to-many (authors appear on multiple papers, papers have multiple authors) and order matters, I went with three normalized tables rather than one big denormalized file. This makes it straightforward to join and query the data however you want.
 
-Paper-author relationships are many-to-many (an author can appear on multiple papers; a paper has multiple authors) and author order matters. The output uses three normalized tables instead of a single denormalized file.
+## Getting to exactly 50 papers
 
-## How Exactly 50 Results Are Ensured
+The assignment says "first 4 pages" and "first 50 papers." Semantic Scholar shows about 10 results per page, so 4 pages only gives ~40. I prioritized hitting exactly 50 unique papers, which usually takes 5 pages.
 
-1. The scraper loads search result pages sequentially, starting at page 1.
-2. On each page, all paper cards are extracted. Duplicate paper URLs (which can appear across pages) are skipped using a seen-URL set.
-3. As soon as 50 unique papers are collected, the list is truncated to exactly 50 and returned.
-4. If a page yields 0 new papers, a counter tracks consecutive empty pages. After 2 consecutive empty pages, pagination stops (guards against infinite loops on blocked/empty responses).
-5. If fewer than 50 unique papers are collected after exhausting `MAX_SEARCH_PAGES` (default 10), the run raises a `RuntimeError` instead of writing partial output.
+The scraper:
+1. Loads pages one at a time, deduplicating by paper URL as it goes.
+2. Stops as soon as it hits 50 unique papers.
+3. If two pages in a row come back empty (blocked, broken, etc.), it stops early.
+4. If it can't reach 50 after `MAX_SEARCH_PAGES` (default 10), it raises an error instead of writing partial output.
 
-The assignment mentions both "first 4 pages" and "first 50 papers." This implementation prioritizes exactly 50 papers: Semantic Scholar shows ~10 results per page, so typically 5 pages are needed. The scraper continues past page 4 if necessary.
+## Citation count
 
-## Citation Count: Assumptions & Extraction
+I'm pulling the number labeled "Citations" from each author's Semantic Scholar profile page. Not h-index, not "Highly Influential Citations" — just the plain "Citations" count.
 
-- **Which metric**: Only the count explicitly labeled "Citations" on a Semantic Scholar author profile page is used. Related metrics (h-index, paper count, influential citations) are ignored.
-- **Where it is extracted**: The scraper visits each author's Semantic Scholar profile URL (e.g., `/author/Name/12345`) and runs a JavaScript extraction script that scans all DOM elements for text matching patterns like `11,693 Citations` or `Citations 11,693`, including shorthand suffixes like `1.2k`.
-- **Fallback**: If the JS extraction returns nothing, a Python-side regex scan of the page body text is attempted.
-- **Null handling**: If an author has no profile link, or if their profile is blocked by a CAPTCHA, `citation_count` is stored as `null` (JSON) / blank (CSV). Rows are never dropped.
+The scraper visits each author's profile URL (like `/author/D.-Patterson/1701130`), waits for the page to load, then runs a JS snippet that looks for text matching patterns like "11,693 Citations". It handles comma-separated numbers and shorthand like "1.2k". If the JS extraction misses it, there's a Python regex fallback on the page body text.
 
-### CAPTCHA handling for author profiles
+If an author doesn't have a profile link, or the profile gets blocked by a CAPTCHA, `citation_count` is stored as null. No rows are dropped.
 
-Semantic Scholar rate-limits rapid author profile visits with human-verification pages. The scraper handles this with:
+### Dealing with CAPTCHAs
 
-- A configurable base delay between author requests (`AUTHOR_DELAY_SECONDS`, default 2 seconds)
-- Automatic CAPTCHA detection (checks for "Human Verification" in the page title or "Complete the security check" in the body)
-- Retry with exponential cooldown: on CAPTCHA, the scraper waits 30 seconds and retries, then 60 seconds on the second attempt, before marking the author's citations as null
+Semantic Scholar starts throwing human-verification pages if you hit author profiles too fast. The scraper handles this by:
 
-## Output Schemas
+- Waiting 2 seconds between each author (configurable via `AUTHOR_DELAY_SECONDS`)
+- Detecting CAPTCHAs by checking for "Human Verification" in the page title
+- On CAPTCHA: waiting 30s, retrying; if blocked again, waiting 60s, retrying once more; then giving up and recording null
 
-### `papers.csv`
+This gets through most of the authors. A handful at the tail end might still get blocked depending on the day.
 
-| Column | Description |
-| --- | --- |
-| `paper_id` | Deterministic ID derived from the Semantic Scholar paper URL |
-| `paper_title` | Paper title as rendered in search results |
-| `paper_url` | Normalized Semantic Scholar paper URL |
-| `authors` | JSON-encoded list of author names in display order |
+## Output schemas
 
-### `authors.csv`
+**papers.csv** — `paper_id`, `paper_title`, `paper_url`, `authors` (JSON list of names)
 
-| Column | Description |
-| --- | --- |
-| `author_id` | Semantic Scholar numeric author ID when available; otherwise a deterministic hash |
-| `author_name` | Author name as rendered in search results |
-| `author_profile_url` | Normalized Semantic Scholar author URL, or blank if no profile link exists |
-| `citation_count` | Integer citation count from the "Citations" label on the profile page, or blank if unavailable |
+**authors.csv** — `author_id`, `author_name`, `author_profile_url` (nullable), `citation_count` (nullable)
 
-### `paper_authors.csv`
+**paper_authors.csv** — `paper_id`, `author_id`, `author_order` (1-based)
 
-| Column | Description |
-| --- | --- |
-| `paper_id` | References `paper_id` in `papers.csv` |
-| `author_id` | References `author_id` in `authors.csv` |
-| `author_order` | 1-based author position as displayed on the paper card |
+### How IDs are generated
 
-## Known Limitations
+Both IDs are deterministic — the same input always produces the same ID, so re-runs are comparable.
 
-- **DOM fragility**: The JavaScript extraction scripts use multiple fallback selectors, but a major Semantic Scholar redesign could still break extraction.
-- **CAPTCHA/rate-limiting**: Despite retry and cooldown logic, aggressive rate-limiting can still block some author profile visits. Running too frequently from the same IP increases this risk.
-- **Truncated author lists**: Some paper cards show only a subset of authors with a "+N authors" expander. The scraper extracts only the visible authors; expanding every collapsed list would require additional clicks and slow the pipeline significantly.
-- **No persistent caching**: Each run starts fresh. If a run is interrupted mid-way through author enrichment, previous results are lost.
-- **Single-threaded**: Author profiles are visited sequentially. Parallel requests would be faster but would also trigger rate-limiting sooner.
+**paper_id**: Extracted from the Semantic Scholar paper URL. The URL path ends with a 40-character hex hash (Semantic Scholar's internal paper identifier, e.g. `39b07ceec72bfee5a6a4626a44de3c2e8828e268`). The scraper takes the first 12 characters and prefixes it with `p_`, giving something like `p_39b07ceec72b`. If the URL doesn't contain that hash format, it falls back to a SHA-1 hash of the full URL.
 
-## Production Improvements
+**author_id**: Pulled from the author's profile URL. A URL like `/author/D.-Patterson/1701130` gives `a_1701130` — the numeric ID at the end is Semantic Scholar's own author identifier. If the URL uses an `authorId` query parameter instead, that's used. If the author has no profile link at all, a SHA-1 hash of the author name is used as a fallback.
 
-- **Semantic Scholar API**: For the search step, use the free [Semantic Scholar Academic Graph API](https://api.semanticscholar.org/) instead of browser scraping. The API returns structured JSON, supports pagination natively, and is not affected by DOM changes. Browser automation would only be needed for data not available via the API.
-- **Persistent cache**: Cache author citation counts (keyed by author ID + date) to avoid re-scraping on subsequent runs and to resume interrupted runs.
-- **Proxy rotation**: Rotate IP addresses to distribute requests and reduce CAPTCHA triggers.
-- **Saved HTML fixtures + tests**: Snapshot sample pages and write unit tests for the extraction scripts so DOM changes are caught early.
-- **CLI interface**: Accept query, result limit, output directory, and headless mode as command-line arguments instead of editing `config.py`.
-- **Docker**: Provide a Dockerfile that pins the Python version, Playwright version, and browser binaries for fully reproducible builds.
+## Limitations
+
+- **Markup changes can break things.** The extraction uses fallback selectors, but a big Semantic Scholar redesign would need code updates.
+- **CAPTCHAs.** The retry logic helps, but running too often from the same IP will still get some profiles blocked.
+- **Truncated author lists.** Some papers show "...+5 authors" with a collapsed list. The scraper only grabs the visible ones — expanding every one would mean extra clicks and significantly slower runs.
+- **No caching.** Every run starts from scratch. If you interrupt it halfway through author enrichment, you lose everything.
+- **Sequential.** Author profiles are visited one at a time. Parallel would be faster but would hit rate limits harder.
+
+## What I'd do differently in production
+
+- Use the [Semantic Scholar API](https://api.semanticscholar.org/) for search results instead of scraping — it returns clean JSON, handles pagination properly, and won't break when the frontend changes. Keep browser automation only for things the API doesn't expose.
+- Cache author citation counts so repeated runs don't re-scrape everything.
+- Add proxy rotation to spread requests across IPs.
+- Snapshot sample HTML pages and write unit tests against them so selector breakage gets caught early.
+- Add a CLI so you can pass the query, limit, and output dir as arguments instead of editing `config.py`.
+- Dockerize the whole thing so the browser version is pinned and it runs the same everywhere.
