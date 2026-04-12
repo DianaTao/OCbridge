@@ -89,11 +89,11 @@ This gets through most of the authors. A handful at the tail end might still get
 
 ### How IDs are generated
 
-Both IDs are deterministic — the same input always produces the same ID, so re-runs are comparable.
+Both IDs are deterministic — the same input always produces the same ID, so re-runs are comparable. They use Semantic Scholar's own full identifiers rather than truncated or custom IDs.
 
-**paper_id**: Extracted from the Semantic Scholar paper URL. The URL path ends with a 40-character hex hash (Semantic Scholar's internal paper identifier, e.g. `39b07ceec72bfee5a6a4626a44de3c2e8828e268`). The scraper takes the first 12 characters and prefixes it with `p_`, giving something like `p_39b07ceec72b`. If the URL doesn't contain that hash format, it falls back to a SHA-1 hash of the full URL.
+**paper_id**: The full 40-character hex hash from the Semantic Scholar paper URL. For example, a paper URL ending in `/39b07ceec72bfee5a6a4626a44de3c2e8828e268` gives `paper_id` = `39b07ceec72bfee5a6a4626a44de3c2e8828e268`. If the URL doesn't contain that hash format, a full SHA-1 hash of the URL is used as a fallback (prefixed with `p_`).
 
-**author_id**: Pulled from the author's profile URL. A URL like `/author/D.-Patterson/1701130` gives `a_1701130` — the numeric ID at the end is Semantic Scholar's own author identifier. If the URL uses an `authorId` query parameter instead, that's used. If the author has no profile link at all, a SHA-1 hash of the author name is used as a fallback.
+**author_id**: The numeric ID from the author's Semantic Scholar profile URL. A URL like `/author/D.-Patterson/1701130` gives `author_id` = `1701130`. If the author has no profile link, a full SHA-1 hash of the author name is used as a fallback (prefixed with `a_`).
 
 ## Limitations
 

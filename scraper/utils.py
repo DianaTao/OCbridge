@@ -28,8 +28,8 @@ def normalize_url(url: Optional[str]) -> Optional[str]:
     return urlunparse((parsed.scheme, parsed.netloc, path, "", parsed.query, ""))
 
 
-def deterministic_id(prefix: str, value: str, length: int = 12) -> str:
-    digest = hashlib.sha1(value.encode("utf-8")).hexdigest()[:length]
+def deterministic_id(prefix: str, value: str) -> str:
+    digest = hashlib.sha1(value.encode("utf-8")).hexdigest()
     return f"{prefix}_{digest}"
 
 
@@ -37,7 +37,7 @@ def paper_id_from_url(paper_url: str) -> str:
     parsed = urlparse(paper_url)
     last_segment = parsed.path.rstrip("/").split("/")[-1]
     if re.fullmatch(r"[a-f0-9]{40}", last_segment):
-        return f"p_{last_segment[:12]}"
+        return last_segment
     return deterministic_id("p", paper_url)
 
 
@@ -48,10 +48,10 @@ def author_id_from(name: str, profile_url: Optional[str]) -> str:
         if len(parts) >= 2 and parts[0] == "author":
             possible_id = parts[-1]
             if possible_id:
-                return f"a_{possible_id}"
+                return possible_id
         query_id = parse_qs(parsed.query).get("authorId", [None])[0]
         if query_id:
-            return f"a_{query_id}"
+            return query_id
     return deterministic_id("a", f"{name}|{profile_url or ''}")
 
 

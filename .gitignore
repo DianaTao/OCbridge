@@ -9,8 +9,8 @@ build/
 .venv/
 venv/
 
-# Output data
-output/
+# # Output data
+# output/
 
 # IDE
 .idea/

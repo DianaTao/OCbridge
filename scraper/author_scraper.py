@@ -19,22 +19,42 @@ _MAX_RETRIES = 2
 CITATION_EXTRACTION_SCRIPT = """
 () => {
   const clean = (text) => (text || '').replace(/\\s+/g, ' ').trim();
-  const candidates = Array.from(document.querySelectorAll('body *'))
-    .map((el) => clean(el.innerText))
-    .filter((text) => text && /citations/i.test(text) && /\\d/.test(text));
 
-  for (const text of candidates) {
-    const patterns = [
-      /([\\d,.]+\\s*[kKmM]?)\\s+Citations\\b/,
-      /Citations\\s*([\\d,.]+\\s*[kKmM]?)/,
-      /([\\d,.]+\\s*[kKmM]?)\\s+Citation\\b/,
-      /Citation\\s*([\\d,.]+\\s*[kKmM]?)/
-    ];
-    for (const pattern of patterns) {
-      const match = text.match(pattern);
-      if (match) return match[1];
+  // Strategy 1: find a leaf-level element whose text is exactly "Citations"
+  // (the label), then grab the adjacent sibling that holds the number.
+  const allEls = Array.from(document.querySelectorAll('body *'));
+  for (const el of allEls) {
+    const ownText = clean(el.innerText);
+    if (/^Citations$/i.test(ownText) && !el.querySelector('*')) {
+      // Check siblings and parent's children for the numeric value
+      const parent = el.parentElement;
+      if (!parent) continue;
+      const siblings = Array.from(parent.children);
+      for (const sib of siblings) {
+        if (sib === el) continue;
+        const sibText = clean(sib.innerText);
+        if (/^[\\d,.]+\\s*[kKmM]?$/.test(sibText)) return sibText;
+      }
+      // Also check parent text in case label and value are in one container
+      const parentText = clean(parent.innerText);
+      const m = parentText.match(/Citations\\s+([\\d,.]+\\s*[kKmM]?)/i)
+             || parentText.match(/([\\d,.]+\\s*[kKmM]?)\\s+Citations/i);
+      if (m) return m[1];
     }
   }
+
+  // Strategy 2: find an element whose own text (not children) is exactly
+  // "Citations" with a number, being careful to exclude "Highly Influential
+  // Citations" and "h-index".
+  for (const el of allEls) {
+    const text = clean(el.innerText);
+    if (/highly influential/i.test(text)) continue;
+    if (/h-index/i.test(text)) continue;
+    const m = text.match(/^Citations\\s+([\\d,.]+\\s*[kKmM]?)$/i)
+           || text.match(/^([\\d,.]+\\s*[kKmM]?)\\s+Citations$/i);
+    if (m) return m[1];
+  }
+
   return null;
 }
 """
@@ -103,9 +123,11 @@ def _is_captcha_page(page: Page) -> bool:
 
 def _parse_citations_from_text(text: str) -> Optional[int]:
     compact = re.sub(r"\s+", " ", text)
+    # Match "Citations 67,167" but NOT "Highly Influential Citations 4,303"
+    # and NOT "h-index 93 Citations" (which would grab 93).
     patterns = [
-        r"([\d,.]+\s*[kKmM]?)\s+Citations\b",
-        r"Citations\s*([\d,.]+\s*[kKmM]?)",
+        r"(?<!Influential\s)Citations\s+([\d,.]+\s*[kKmM]?)",
+        r"(?<!index\s)([\d,.]+\s*[kKmM]?)\s+Citations(?!\s+\d)",
     ]
     for pattern in patterns:
         match = re.search(pattern, compact)
